@@ -1,0 +1,120 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    width: 900px;
+    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-container{
+    background-color:  hsl(31, 77%, 52%);
+    padding: 1.8em;
+    max-height: 400px;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: .1em;
+    font-weight: 400;
+    min-height: 50vh;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.second-container{
+    background-color:  hsl(184, 100%, 22%);
+    padding: 1.8em;
+    max-height: 400px;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: .1em;
+    font-weight: 400;
+    min-height: 50vh;
+
+}
+
+.third-container{
+    background-color: hsl(179, 100%, 13%);
+    padding: 1.8em;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: .1em;
+    font-weight: 400;
+    min-height: 50vh;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sedan, .suv, .luxury{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    font-size: .9rem;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* buttons */
+
+button{
+    border: none;
+    padding: 1em 1em 1em 1em;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.one{
+    color: hsl(31, 77%, 52%);
+    margin-top: 1.1em;
+    transform: translateY(40px);
+}
+
+.two{
+    color: hsl(184, 100%, 22%);
+    margin-top: 1.1em;
+    transform: translateY(45px);
+}
+
+.three{
+    color: hsl(179, 100%, 13%);
+    margin-top: 1.1em;
+    transform: translateY(40px);
+}
+
+
+footer{
+    font-size: 1.5em;
+    color: hsl(228, 45%, 44%);
+    margin-left: 1.5em;
+}
+
+@media (max-width:768px) {
+
+    body{
+        margin: 0 auto;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .first-container{
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .third-container{
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+    }
+}
+
